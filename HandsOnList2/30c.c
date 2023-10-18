@@ -11,20 +11,22 @@ d. remove the shared memory
 Date: 11th October, 2023
 ============================================================================
 */
-#include <sys/types.h> // Import for `ftok`, `shmget`, `shmat`
-#include <sys/ipc.h>   // Import for `ftok`, `shmget`
-#include <sys/shm.h>   // Import for `shmget`, `shmat`
-#include <unistd.h>    // Import for `_exit`
-#include <stdio.h>     // Import for `perror` & `printf`
+#include<sys/shm.h>
+#include<unistd.h>
+#include<stdio.h>
 
-void main()
-{
-    int k, shmid;
-    char  *data;
-
+int main(){
+    int k,shmid;
+    char* data;
     k = ftok(".",'a');
-    shmid = shmget(k,1024,IPC_CREAT | 0744);
-    data = shmat(shmid,0,0);
-    printf("Enter text: ");
-    scanf("%[^\n]",data);
-}
+    shmid = shmget(k, 1024, IPC_CREAT | 0744);
+    data = shmat(shmid, 0, 0);
+
+    printf("Data: %s\n",data);
+    if(shmdt(data)==-1){
+        perror("shmdt");
+        return 1;
+    }
+    printf("Data detached\n");
+    return 0;
+}   

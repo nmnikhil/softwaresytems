@@ -1,3 +1,12 @@
+/*
+============================================================================
+Name : 14.c
+Author : NIKHIL NM  
+Description : Write a simple program to create a pipe, write to the pipe, read from pipe and display on 
+the monitor.
+Date: 9th October, 2023
+============================================================================
+*/
 #include <errno.h>
 #include <fcntl.h>
 #include <stdio.h>

@@ -1,14 +1,8 @@
 /*
 ============================================================================
-Name : 19.c
+Name : 20.c
 Author : NIKHIL NM 
-Description : Create a FIFO file by
-		a. mknod command
-		b. mkfifo command
-		c. use strace command to find out, which command (mknod or mkfifo) is better.
-		d. mknod system call
-		e. mkfifo library function
-
+Description :  Write two programs so that both can communicate by FIFO -Use one way communication.
 Date: 9th October, 2023
 ============================================================================
 */

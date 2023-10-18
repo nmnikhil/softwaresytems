@@ -1,3 +1,12 @@
+/*
+============================================================================
+Name : 15.c
+Author : NIKHIL NM  
+Description :  Write a simple program to send some data from parent to the child process
+
+Date: 9th October, 2023
+============================================================================
+*/
 #include <pthread.h>
 #include <stdio.h>
 #include <sys/types.h>

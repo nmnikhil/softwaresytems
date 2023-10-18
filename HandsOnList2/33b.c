@@ -1,3 +1,12 @@
+/*
+============================================================================
+Name : 33b.c
+Author : NIKHIL NM 
+Description : Write a program to communicate between two machines using socket.    
+
+Date: 11th October, 2023
+============================================================================
+*/
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
@@ -29,7 +38,10 @@ int main() {
     printf("Connected to server.\n");
 
     // Send data to the server
-    const char* message = "Hello from the client!";
+    //const char* message = "Hello from the client!";
+    const char* message;
+    printf("enter data\n");
+    scanf("%[^\n]", message);
     ssize_t bytes_sent = send(client_socket, message, strlen(message), 0);
     if (bytes_sent == -1) {
         perror("Error sending data");

@@ -1,3 +1,11 @@
+/*
+============================================================================
+Name : 26.c
+Author : NIKHIL NM 
+Description : Write a program to send messages to the message queue.
+Date: 11th October, 2023
+============================================================================
+*/
 #include <stdio.h>
 #include <unistd.h>
 #include <sys/stat.h>
@@ -40,6 +48,10 @@ int main() {
         perror("msgsnd");
         exit(1);
     }
+      msgsnd(id,&myq,size,0);
+    printf("Message sent successfully to message queue with key %d\n", mqid);
+
+    return 0;
 
     return 0;
 }

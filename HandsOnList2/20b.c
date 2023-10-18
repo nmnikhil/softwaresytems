@@ -1,3 +1,11 @@
+/*
+============================================================================
+Name : 20.c
+Author : NIKHIL NM 
+Description :  Write two programs so that both can communicate by FIFO -Use one way communication.
+Date: 9th October, 2023
+============================================================================
+*/
 #include <stdio.h>
 #include <unistd.h>
 #include <sys/stat.h>

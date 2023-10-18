@@ -1,4 +1,13 @@
-
+/*
+============================================================================
+Name : 27.c
+Author : NIKHIL NM 
+Description : Write a program to receive messages from the message queue.
+ a. with 0 as a flag
+ b. with IPC_NOWAIT as a flag
+Date: 11th October, 2023
+============================================================================
+*/
 #include <stdio.h>
 #include <unistd.h>
 #include <sys/stat.h>

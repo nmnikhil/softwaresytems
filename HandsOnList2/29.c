@@ -1,6 +1,6 @@
 /*
 ============================================================================
-Name : 19.c
+Name : 29.c
 Author : NIKHIL NM 
 Description : Write a program to remove the message queue. 
 Date: 11th October, 2023

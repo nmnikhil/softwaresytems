@@ -1,3 +1,12 @@
+/*
+============================================================================
+Name : 33a.c
+Author : NIKHIL NM 
+Description : Write a program to communicate between two machines using socket.    
+
+Date: 11th October, 2023
+============================================================================
+*/
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
